@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Md. Shipon Hossain</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .project-card { display: flex; flex-direction: column; overflow: hidden; padding: 0; }
+    .project-img { width: 100%; height: 200px; background: #e2e8f0; object-fit: cover; }
+    .project-content { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+    .project-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .project-tag { background: rgba(0, 120, 212, 0.1); color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.8rem; font-weight: 500; }
+    .project-links { display: flex; gap: 1rem; margin-top: auto; padding-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <div class="animated-bg"><div class="bg-circle bg-circle-1"></div><div class="bg-circle bg-circle-2"></div></div>
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">Shipon.</a>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="certificates.html">Certificates</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="animate-slide-up" style="padding-top: 120px;">
+      <h1 class="section-title">Featured Projects</h1>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+        
+        <!-- Project 1 -->
+        <div class="glass-card project-card reveal">
+          <div class="project-img" style="background-image: url('/images/projects/project1.webp'); background-size: cover; background-position: center;"></div>
+          <div class="project-content">
+            <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--text-primary);">Strategic Brand Revamp</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem;">A comprehensive rebranding strategy created for a local business to improve market positioning.</p>
+            <div class="project-tags">
+              <span class="project-tag">Brand Management</span>
+              <span class="project-tag">Canva</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card project-card reveal">
+          <div class="project-img" style="background-image: url('/images/projects/project2.webp'); background-size: cover; background-position: center;"></div>
+          <div class="project-content">
+            <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--text-primary);">Social Media Ad Campaign</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem;">Simulated an end-to-end Meta Ads campaign optimizing for ROAS with A/B tested creatives.</p>
+            <div class="project-tags">
+              <span class="project-tag">Digital Marketing</span>
+              <span class="project-tag">Meta Ads</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card project-card reveal">
+          <div class="project-img" style="background-image: url('/images/projects/project3.webp'); background-size: cover; background-position: center;"></div>
+          <div class="project-content">
+            <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--text-primary);">Market Entry Analysis</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.95rem;">In-depth market research project predicting viability of a new product segment in Bangladesh.</p>
+            <div class="project-tags">
+              <span class="project-tag">Research</span>
+              <span class="project-tag">Data Analysis</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">View Details</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2026 Md. Shipon Hossain. All rights reserved.</p>
+  </footer>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/animations.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+/* Keyframes */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes float { 0% { transform: translateY(0); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0); } }
+
+/* Utility Classes */
+.animate-fade-in { animation: fadeIn 1s ease forwards; }
+.animate-slide-up { animation: slideUp 0.8s ease forwards; opacity: 0; }
+
+/* Scroll Reveals */
+.reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* Background Animation */
+.animated-bg { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; overflow: hidden; pointer-events: none; }
+.animated-bg::after { content: ''; position: absolute; top: 20%; right: 10%; width: 300px; height: 300px; background: white; border-radius: 50%; opacity: 0.05; filter: blur(100px); animation: float 20s infinite ease-in-out; }
+.bg-circle { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.2; }
+.bg-circle-1 { top: -10%; left: -10%; width: 500px; height: 500px; background: var(--primary); animation: float 15s infinite ease-in-out; }
+.bg-circle-2 { bottom: -10%; right: -10%; width: 600px; height: 600px; background: var(--accent); animation: float 18s infinite ease-in-out reverse; filter: blur(150px); opacity: 0.1; }
