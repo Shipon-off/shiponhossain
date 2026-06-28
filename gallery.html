@@ -1,77 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery - Md. Shipon Hossain</title>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/animations.css">
-  <link rel="stylesheet" href="/css/responsive.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <style>
-    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-    .gallery-item { position: relative; overflow: hidden; border-radius: 12px; cursor: pointer; aspect-ratio: 4/3; }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
-    .gallery-item:hover img { transform: scale(1.1); }
-    .gallery-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; }
-    .gallery-item:hover .gallery-overlay { opacity: 1; }
-    .gallery-overlay span { color: white; font-weight: 500; text-align: center; padding: 1rem; }
-  </style>
-</head>
-<body>
-  <div class="animated-bg"><div class="bg-circle bg-circle-1"></div><div class="bg-circle bg-circle-2"></div></div>
-  <nav class="navbar">
-    <a href="index.html" class="nav-brand">Shipon.</a>
-    <div class="hamburger"><span></span><span></span><span></span></div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="certificates.html">Certificates</a></li>
-      <li><a href="achievements.html">Achievements</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <main class="container">
-    <section class="animate-slide-up" style="padding-top: 120px;">
-      <h1 class="section-title">Photo Gallery</h1>
-      
-      <div class="gallery-grid">
-        <div class="gallery-item reveal">
-          <div style="width:100%; height:100%; background:var(--card-border); background-image: url('/images/gallery/photo1.webp'); background-size:cover;"></div>
-          <div class="gallery-overlay"><span>University Campus</span></div>
-        </div>
-        <div class="gallery-item reveal">
-          <div style="width:100%; height:100%; background:var(--card-border); background-image: url('/images/gallery/photo2.webp'); background-size:cover;"></div>
-          <div class="gallery-overlay"><span>Seminar Presentation</span></div>
-        </div>
-        <div class="gallery-item reveal">
-          <div style="width:100%; height:100%; background:var(--card-border); background-image: url('/images/gallery/photo3.webp'); background-size:cover;"></div>
-          <div class="gallery-overlay"><span>Business Competition</span></div>
-        </div>
-        <div class="gallery-item reveal">
-          <div style="width:100%; height:100%; background:var(--card-border); background-image: url('/images/gallery/photo4.webp'); background-size:cover;"></div>
-          <div class="gallery-overlay"><span>Future Convocation</span></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Md. Shipon Hossain</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="animated-bg">
+      <div class="bg-circle bg-circle-1"></div>
+      <div class="bg-circle bg-circle-2"></div>
     </div>
-    <p>&copy; 2026 Md. Shipon Hossain. All rights reserved.</p>
-  </footer>
-  <script src="/js/navigation.js"></script>
-  <script src="/js/animations.js"></script>
-  <script src="/js/main.js"></script>
-</body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-brand" aria-label="Homepage">Shipon.</a>
+      <button
+        class="hamburger"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        style="background: none; border: none"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="container" aria-label="Main Content">
+      <section class="animate-slide-up" style="padding-top: 120px">
+        <h1 class="section-title">Photo Gallery</h1>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal">
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                background: var(--card-border);
+                background-image: url(&quot;/images/gallery/photo1.webp&quot;);
+                background-size: cover;
+              "
+            ></div>
+            <div class="gallery-overlay"><span>University Campus</span></div>
+          </div>
+          <div class="gallery-item reveal">
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                background: var(--card-border);
+                background-image: url(&quot;/images/gallery/photo2.webp&quot;);
+                background-size: cover;
+              "
+            ></div>
+            <div class="gallery-overlay"><span>Seminar Presentation</span></div>
+          </div>
+          <div class="gallery-item reveal">
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                background: var(--card-border);
+                background-image: url(&quot;/images/gallery/photo3.webp&quot;);
+                background-size: cover;
+              "
+            ></div>
+            <div class="gallery-overlay"><span>Business Competition</span></div>
+          </div>
+          <div class="gallery-item reveal">
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                background: var(--card-border);
+                background-image: url(&quot;/images/gallery/photo4.webp&quot;);
+                background-size: cover;
+              "
+            ></div>
+            <div class="gallery-overlay"><span>Future Convocation</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div style="display: flex; gap: 1rem; align-items: center">
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+          "
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+          "
+          >GitHub</a
+        >
+      </div>
+      <p style="font-size: 0.875rem">
+        &copy; 2026 Md. Shipon Hossain. All rights reserved.
+      </p>
+    </footer>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/animations.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
